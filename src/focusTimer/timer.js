@@ -1,6 +1,7 @@
 import state from './state.js';
 import * as element from './elements.js';
-
+import * as sounds from './sounds.js';
+import { toggleReset } from './actions.js';
 export function countdown(){
 if(!state.isRunning){
   return
@@ -16,6 +17,8 @@ if(seconds < 0){
 }
 
 if(minutes < 0){
+  toggleReset();
+  sounds.alarm.play();
   return;
 }
 

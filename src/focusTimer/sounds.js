@@ -8,6 +8,8 @@ export const coffeSound = new Audio('./assets/Cafeteria.wav');
 
 export const buttonPressAudio = new Audio('./assets/button-press.wav');
 
+export const alarm = new Audio('./assets/kichen-timer.mp3');
+
 
 campfireSound.loop = true;
 rainSound.loop = true;
