@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Focus Timer</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <script type="module" src="./src/main.js" defer></script>
+</head>
+<body>
+  <main>
+
+
+    <div id="left">
+      <div id="timer">
+        <span id="minutes">00</span>
+        <span>:</span>
+        <span id="seconds">00</span>
+      </div>
+      <div id="controls">
+        <button data-action="toggleRunning">
+          <i class="ph-bold ph-play-circle" data-action="toggleRunning"></i>
+        </button>
+        <button data-action="toggleReset">
+          <i class="ph-bold ph-stop-circle" data-action="toggleReset"></i>
+        </button>
+        <button data-action="moreMinutes">
+          <i class="ph-bold ph-plus-circle" data-action="moreMinutes"></i>
+        </button>
+        <button data-action="lessMinutes">
+          <i class="ph-bold ph-minus-circle" data-action="lessMinutes"></i>
+        </button>
+      </div>
+    </div>
+
+    <div id="right">
+      <div id="seasons">
+
+          <button id="forest"  data-action="forest">
+            <i class="ph-bold ph-tree" data-action="forest"></i>
+          </button>
+        
+        <button id="rain" data-action="rain">
+          <i class="ph-bold ph-cloud-rain" data-action="rain"></i>
+        </button>
+        <button id="coffe" data-action="coffe">
+          <i class="ph-bold ph-storefront" data-action="coffe"></i>
+        </button>
+        <button id="campfire" data-action="campfire">
+          <i class="ph-bold ph-fire" data-action="campfire"></i>
+        </button>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

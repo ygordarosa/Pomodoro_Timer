@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: hsl(0, 0%, 100%);
+  --button-bg: hsl(240, 9%, 89%);
+  --button-bg-hover: hsl(0, 0%, 61%);
+  --color: hsl(240, 6%, 21%);
+  --button-active: hsl(194, 97%, 31%);
+  --button-active-hover: hsl(194, 100%, 21%);
+
+
+  font-size: clamp(40%, 1% + 1.5vw, 62.5%);
+}
+
+body{
+  background-color: var(--bg-color);
+  font-size: 1.6rem;
+  height: 100vh;
+  display: grid;
+  place-content: center;
+  justify-content: center;
+  font-family: sans-serif;
+  color: var(--color);
+}
+
+
+
+main {
+  display: flex;
+  padding: 19.2rem 23rem;
+  width: 100%;
+  gap: 19.2rem;
+  justify-content: space-between;
+
+}
+#left{
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  gap: 1.7rem;
+}
+
+
+#left span {
+  font-size: 12.6rem;
+}
+
+button {
+  cursor: pointer;
+}
+
+#controls {
+  display: flex;
+  justify-content: space-between;
+}
+
+#left button {
+  border: none;
+  background-color: transparent;
+  font-size: 4.8rem;
+  color: var(--color);
+}
+
+#left button:hover {
+  transition: 0.2s;
+  animation: 0.1s;
+  scale: 1.1;
+}
+
+#seasons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3.2rem;
+}
+
+#seasons button {
+  background-color: var(--button-bg);
+  border: none;
+  border-radius: 2rem;
+  display: flex;
+  font-size: 14rem;
+  padding: 3rem;
+}
+#seasons button:hover {
+  background-color: var(--button-bg-hover);
+  transition: 0.2s;
+}
+#right button i {
+  font-size: 7rem;
+}
+
+
+
+#seasons button.active {
+  background: var(--button-active);
+  color: var(--bg-color);
+}
+#seasons button.active:hover {
+  background: var(--button-active-hover);
+  transition: 0.2s;
+}
